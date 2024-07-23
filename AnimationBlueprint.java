@@ -51,7 +51,9 @@ public record AnimationBlueprint(
             String textureExportFolder,
             String modelExportFolder,
             String displayItemPath,
-            Map<UUID, Texture> textures
+            // Map<UUID, Model> models, // Not currently needed - useful for server-side resource pack generation
+            // Map<UUID, Map<UUID, Model>> // Not currently needed  - useful for server-side resource pack generation
+            Map<UUID, Texture> textures // Also not currently needed, but it's already here - useful for server-side resource pack generation
     ) {
         public record Texture(
                 String name,
